@@ -1,0 +1,28 @@
+@mixin fixed-position {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 3;
+}
+
+.nav {
+    
+    &-icon {
+        @include fixed-position;
+    }
+
+    &-panel {
+        @include fixed-position;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: #fff;
+        border: 1px #007bff solid;
+        border-radius: 1.5rem;
+        transform: scale(0);
+        animation: toBig linear 0.3s forwards;
+    }
+
+}
+

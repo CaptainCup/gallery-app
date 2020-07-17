@@ -1,0 +1,52 @@
+.picture {
+    position: relative;
+    height: auto;
+    display: flex;
+    transition: transform 0.3s;
+
+    &__name {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        max-width: 50%;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    &__icon {
+        position: absolute;
+        right: 5%;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s;
+
+        &.first {
+            top: 5%;
+        }
+
+        &.second {
+            top: calc(5% + 2rem);
+        }
+
+        &.third {
+            top: calc(5% + 4rem);
+        }
+    }
+    
+    &:hover {
+ 
+        & > .picture__name {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        & > .picture__icon {
+            opacity: 1;
+            z-index: 2;
+        }
+
+    }
+}

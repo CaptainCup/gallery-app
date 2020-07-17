@@ -1,0 +1,31 @@
+.tutorial-{
+
+    &banner {
+        position: fixed;
+        display: block;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: rgba(30, 30, 30, 0.7);
+        z-index: 3;
+    }
+
+    &div {
+        position: absolute;
+        width: 10rem;
+        top: 1rem;
+        right: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &span {
+        display: block;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        color: #007bff;
+        background-color: #fff;
+        border: 1px solid #007bff;
+        border-radius: 1rem;
+    }
+
+}
