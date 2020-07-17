@@ -142,9 +142,9 @@ export default function MainScreen() {
                                 />}
                 <Nav setGalleryColumns={setGalleryColumns} tutorial={tutorial} />
                 <Switch>
-                    <Route path={'/'} exact component={WrappedGallery} />
-                    <Route path={'/favorites'} exact component={WrappedGalleryFavorite} />
-                    <Route path={'/deleted'} exact component={WrappedGalleryDeleted} />
+                    <Route path={'/gallery-app'} exact component={WrappedGallery} />
+                    <Route path={'/gallery-app/favorites'} exact component={WrappedGalleryFavorite} />
+                    <Route path={'/gallery-app/deleted'} exact component={WrappedGalleryDeleted} />
                 </Switch>
             </div>
         </BrowserRouter>
